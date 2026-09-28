@@ -1,0 +1,54 @@
+# Keep data directories, but ignore their contents
+/resources/data/input/*
+!/resources/data/input/.gitkeep
+/resources/data/output/*
+!/resources/data/output/.gitkeep
+/resources/data/output_gpt2/*
+!/resources/data/output_gpt2/.gitkeep
+/resources/data/results/*
+!/resources/data/results/.gitkeep
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+.tox/
+.nox/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Notebooks and local environment variables
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
