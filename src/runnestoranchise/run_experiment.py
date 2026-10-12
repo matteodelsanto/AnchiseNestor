@@ -25,7 +25,7 @@ from utils.models_training import leave_one_out_trainingV1, train_model
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DATASET_NAME = "anchise_nestor_balanced_completi"
+DATASET_NAME = "anchise_nestor_cleaned"
 DATASET_ROOT = PROJECT_ROOT / "resources" / "data" / "input" / DATASET_NAME
 RUNTIME_ROOT = PROJECT_ROOT / "resources" / "data" / "input" / f"{DATASET_NAME}_runtime"
 
@@ -36,8 +36,8 @@ DISEASE_CLASS = "ad"
 CONTROL_CLASS = "cn"
 
 BATCH_SIZE = 16
-MAX_EPOCHS = 1
-SAVE_EVERY = 1
+MAX_EPOCHS = 30
+SAVE_EVERY = 30
 NUM_GPUS = 1
 WINDOW = 20
 LEAP = 0

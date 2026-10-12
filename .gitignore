@@ -1,3 +1,27 @@
+# Experiment notes
+/EXPERIMENTS_*.md
+/FOLDS.md
+
+# Run outputs
+/logs/
+/plots/
+*.out
+
+# Experiment scripts not tracked
+/src/run_coherence_roberta/
+
+# runnestoranchise: keep only the experiment scripts and walk orders
+/src/runnestoranchise/*
+!/src/runnestoranchise/run_experiment.py
+!/src/runnestoranchise/run_experiment_fold.py
+!/src/runnestoranchise/run_experiment_optimized.py
+!/src/runnestoranchise/fold_walk_order.json
+!/src/runnestoranchise/walk_order.json
+
+# run_ppl_coherence: keep folds and balanced only
+/src/run_ppl_coherence/ppl_coherence.py
+/src/run_ppl_coherence/ppl_coherence_folds_base.py
+
 # Keep data directories, but ignore their contents
 /resources/data/input/*
 !/resources/data/input/.gitkeep
